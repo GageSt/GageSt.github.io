@@ -1,0 +1,8 @@
+/*-- Gage Tranter 12 April 2023 */
+p, ul, li {font-size: 20px;}
+header {background-color: darkcyan;}
+footer {background-color: darkcyan;}
+#salmon:link {color: red;}
+#salmon:visited {color:goldenrod;}
+#salmon:hover {color:chocolate;}
+#salmon:active {color:khaki;}
