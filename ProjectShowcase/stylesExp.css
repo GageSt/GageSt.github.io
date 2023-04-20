@@ -1,0 +1,48 @@
+.table{
+  background:white;
+  border: 1px solid black;
+  float:left;
+  margin:5px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.table ul{
+  padding:0;
+  margin:0;
+  background: peachpuff
+}
+
+.tables{
+  margin: 0 auto;
+}
+
+.table ul li{
+  list-style-type: none;
+  border-top: 1px solid black;
+  padding: 8px;
+  
+}
+
+.table ul li:nth-child(odd){
+  background: hsl(41, 100%, 57%, .4);
+}
+
+.table h3{
+  margin: 10px;
+  background:hsl(41, 100%, 57%, 1);
+  padding: 10px;
+}
+
+.table a.button{
+  display:block;
+  margin: 10px;
+  background: #a03b1d;
+  font-weight:900;
+  border-radius: 10px;
+  padding: 5px;
+  color: white;
+  text-decoration: none;
+  }
+
+  
