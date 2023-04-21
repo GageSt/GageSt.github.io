@@ -1,0 +1,21 @@
+/* Practice CustomFonts Style Sheet */
+@font-face {
+    font-family: 'walkwayBold';
+   
+    src: url('../fonts/Walkway_Bold-webfont.woff') format('woff'),
+         url('../fonts/Walkway_Bold-webfont.woff') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'sofia';
+    src: url('../fonts/sofia-regular-webfont.woff') format('woff'),
+         url('../fonts/sofia-regular-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+	font-family: 'walkwayBold', "Times New Roman", serif;
+}
