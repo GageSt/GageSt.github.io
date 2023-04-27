@@ -6,7 +6,7 @@ body{
   background-repeat: no-repeat;
   margin: 0px;
   height: 100%;
-  
+  text-align: center;
 }
 
 .main{
@@ -16,6 +16,10 @@ margin-left: 10px;
 
 main{
   font-family: 'Lora', Georgia, serif;
+}
+
+form{
+  text-align: left;
 }
 
 footer{
