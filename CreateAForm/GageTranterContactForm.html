@@ -2,76 +2,75 @@
 <!-- Gage Tranter
      17 April 20232 -->
 <html lang="en">
-<head>
-    <title>Contact Form</title>
-    <meta name="author" content="Your Name" />
-    <meta charset="UTF-8" />
-    <meta name="description" content="Your Name web developer Boise Idaho" />
-    <meta name="keywords" content="client-side server-side C# HTML CSS JavaScript" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <style>
-        div {
+    <head>
+            <title>Contact Form</title>
+            <meta name="author" content="Gage Tranter">
+            <meta charset="UTF-8">
+            <meta name="description" content="Gage Tranter web developer Boise Idaho">
+             <meta name="keywords" content="client-side server-side C# HTML CSS JavaScript">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            div {
             margin: 10px;
-        }
+            }
 
-        label {
+            label {
             margin-right: 15px;
             width: 150px;
             display: inline-block;
-        }
-    </style>
-</head>
-<body>
+            }
+        </style>
+    </head>
+    <body>
     <form action="mailto:gagetranter@my.cwi.edu?subject=Personal%20Portfolio%20Mail" enctype="text/plain" method="POST">
         <!-- Group Fields Together, page 104 -->
         <fieldset>
-        <legend>How do I contact you?</legend>
+            <legend>How do I contact you?</legend>
             <!-- Company Select Box, page 97 -->
-            <div>
-                <label for="Company Name">Company:<input type="text" placeholder="Big Tech Company"></label>
+                <div>
+                    <label for="Company_Name">Company:<input type="text" name="Company Name" id="Company_Name"></label>
                 
-            </div>
+                </div>
             <!-- Person to Contact Select Box, page 97 -->
-            <div>
-                <label for="Contact">Person to Contact<input type="text" placeholder="Mary Wright"></label>
-            </div>
+                <div>
+                    <label for="Contact">Person to Contact<input type="text" name="Contact" id="Contact"></label>
+                </div>
             <!-- Email, textbook file rental.html -->	
             <!--Video 9.9 Building and Testing a Valid Form-->	
-            <div>
-              <label for="Email">Email:</label><input type="text" name="email" id="email" placeholder="mwright@bigtech.com">
-             <br>
-              <label for="Phone">Phone Number:</label><input type="text" name="phone" id="phone" placeholder="208-111-1111">
-            </div>
+                <div>
+                     <label for="Email">Email:</label><input type="text" name="email" id="Email" placeholder="email@address.com">
+                    <br>
+                    <label for="Phone">Phone Number:</label><input type="text" name="phone" id="Phone" placeholder="000-000-0000">
+                </div>
             <!-- Phone, textbook file rental.html-->
             <!--Video 9.9 Building and Testing a Valid Form-->
-            <div>
-
-            </div>
+                <div>
+                </div>
         </fieldset>
 
         <!-- Group Fields Together, page 104 -->
         <fieldset>
             <legend>What opportunities are available at your company?</legend>
             <!-- Select Box, page 98 -->
-<select>
-  <option>Internship</option>
-  <option>Part-Time</option>
-  <option>Contract</option>
-  <option>Temporary</option>
-  <option>On Call</option>
-</select>
+        <select>
+          <option>Internship</option>
+          <option>Part-Time</option>
+          <option>Contract</option>
+          <option>Temporary</option>
+          <option>On Call</option>
+        </select>
             <!-- Radio Buttons, page 99 -->
-<br><p>How did you find me?</p>
-<input type="radio" name="source" id="LinkedIn" value="LinkedIn"><label for="LinkedIn">LinkedIn</label>
-<input type="radio" name="source" id="JobFair" value="JobFair"><label for="JobFair">Job Fair</label>
-<input type="radio" name="source" id="CWI" value="CWI"><label for="">CWI Corporate Partner</label>
+                <br><p>How did you find me?</p>
+                <input type="radio" name="source" id="LinkedIn" value="LinkedIn"><label for="LinkedIn">LinkedIn</label>
+                <input type="radio" name="source" id="JobFair" value="JobFair"><label for="JobFair">Job Fair</label>
+                <input type="radio" name="source" id="CWI" value="CWI"><label for="CWI">CWI Corporate Partner</label>
 
             <div>
                 <!-- Text Area, textbook file code-9-1.html -->	
-                <input type="textarea"  rows="10" placeholder="We will give you a tour of our facility and ask you to fill out some paperwork. You will meet with an interview team of 3 people. If you are selected for the next round of interviews, that interview will be done by the owner of the company."></input>
+                <input type="text" style="width: 100%; height: 100px;" placeholder="Your Text Here...">
             </div>
         </fieldset>
 		<input type="submit" id="submit" value="Submit" class="btn">
-     </form>
-</body>
+    </form>
+    </body>
 </html>
