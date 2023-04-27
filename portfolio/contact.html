@@ -1,32 +1,97 @@
 <!DOCTYPE html>
   <!-- Gage Tranter
-  4 April 2022 -->
-<html lang="en">
-  <head>
+  27 April 2023 -->
+  <html lang="en">
+    <head>
         <title>About Gage Tranter Bio</title>
-       <meta name="author" content="Gage Tranter">
-       <meta charset="UTF-8">
-       <meta name="description" content="Gage Tranter software app designer Boise Idaho">
-       <meta name="keywords" content="client-side server-side software developer programmer">
-       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  </head>
+        <meta name="author" content="Gage Tranter">
+        <meta charset="UTF-8">
+        <meta name="description" content="Gage Tranter software app designer Boise Idaho">
+        <meta name="keywords" content="client-side server-side software developer programmer">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/styles.css" rel="stylesheet" type="text/css">
+        <style>
+          div {
+          margin: 10px;
+          }
+
+          label {
+          margin-right: 15px;
+          width: 150px;
+          display: inline-block;
+          }
+      </style>
+      </head>
   <body>
-  <header>
-    <h1>Gage Tranter</h1>
-      <nav>
-        <ul>
-          <li><a href = "index.html">Home</a></li>
-          <li><a href = "about.html">About</a></li>
-          <li><a href = "experiance.html">Experience</a></li>
-          <li><a href = "contact.html">Contact</a>
-        </ul>
-      </nav>
-  </header>
-    <h2>Contact Information:</h2>
-        <p><b>You can reach me by phone or email at <span style="color:blue"><a href="mailto:gagetranter@my.CWI.edu"> gagetranter@my.CWI.edu</a></span> | <a href="tel:12085060699">(208) ***-**** </a></b></p>
+    <header>
+        <nav class="main">
+          <ul>
+            <li><a href = "index.html">Home</a></li>
+            <li><a href = "about.html">About</a></li>
+            <li><a href = "experiance.html">Experience</a></li>
+            <li><a href = "contact.html">Contact</a>
+          </ul>
+        </nav>
+        <h1>Gage Tranter</h1>
+    </header>
+    <form action="mailto:gagetranter@my.CWI.edu?subject=Personal%20Portfolio%20Mail" enctype="text/plain" method="POST">
+      <!-- Group Fields Together, page 104 -->
+      <fieldset>
+          <legend>How do I contact you?</legend>
+          <!-- Company Select Box, page 97 -->
+              <div>
+                  <label for="Company_Name">Company:<input type="text" name="Company Name" id="Company_Name"></label>
+              
+              </div>
+          <!-- Person to Contact Select Box, page 97 -->
+              <div>
+                  <label for="Contact">Person to Contact<input type="text" name="Contact" id="Contact"></label>
+              </div>
+          <!-- Email, textbook file rental.html -->	
+          <!--Video 9.9 Building and Testing a Valid Form-->	
+              <div>
+                   <label for="Email">Email:</label><input type="text" name="email" id="Email" placeholder="email@address.com">
+                  <br>
+                  <label for="Phone">Phone Number:</label><input type="text" name="phone" id="Phone" placeholder="000-000-0000">
+              </div>
+          <!-- Phone, textbook file rental.html-->
+          <!--Video 9.9 Building and Testing a Valid Form-->
+              <div>
+              </div>
+      </fieldset>
+
+      <!-- Group Fields Together, page 104 -->
+      <fieldset>
+          <legend>What opportunities are available at your company?</legend>
+          <!-- Select Box, page 98 -->
+      <select>
+        <option>Internship</option>
+        <option>Part-Time</option>
+        <option>Contract</option>
+        <option>Temporary</option>
+        <option>On Call</option>
+      </select>
+          <!-- Radio Buttons, page 99 -->
+              <br><p>How did you find me?</p>
+              <input type="radio" name="source" id="LinkedIn" value="LinkedIn"><label for="LinkedIn">LinkedIn</label>
+              <input type="radio" name="source" id="JobFair" value="JobFair"><label for="JobFair">Job Fair</label>
+              <input type="radio" name="source" id="CWI" value="CWI"><label for="CWI">CWI Corporate Partner</label>
+
+          <div>
+              <!-- Text Area, textbook file code-9-1.html -->	
+              <textarea style="width: 100%; height: 100px;" placeholder="Your Text Here..."></textarea>
+          </div>
+      </fieldset>
+      <input type="submit" id="submit" value="Submit" class="btn">
+  </form>   
   <footer>
-          <hr>
-          Contact me at: <a target="_blank" href="https://www.linkedin.com/">LinkedIn</a>" and <a target="_blank" href="https://github.com">GitHub</a>"
+    <hr>
+    <h2>Contact Information:</h2>
+          <a href="https://github.com/GageSt" target="_blank"><img src="image/GitHubIcon.png" alt="Instagram Logo Link"></a>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <a href="https://twitter.com" target="_blank"><img src="image/FBIcon.png" alt="Twitter Logo Link"></a>
+
+          <p>You can reach me by phone or email at <span style="color:blue">gagetranter@my.CWI.edu</span> | (208) ***-****</p>
   </footer>
   </body>
-</html>
+  </html>
