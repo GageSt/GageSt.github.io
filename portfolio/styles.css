@@ -22,6 +22,10 @@ form{
   text-align: left;
 }
 
+.displayimg img{
+  max-height: 600px;
+}
+
 footer{
  text-align: center;
   float: left;
