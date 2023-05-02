@@ -1,0 +1,90 @@
+$color_1: #000;
+$color_2: #8B0000;
+$font-family_1: "Times New Roman", serif;
+$font-family_2: 'Righteous', cursive;
+$font-family_3: 'Quicksand-Bold', Arial, sans-serif;
+$background-color_1: #B8D1EB;
+$background-color_2: #C5A98B;
+$background-color_3: #7a6b48;
+
+@import "https://fonts.googleapis.com/css?family=Righteous";
+@font-face {
+	font-family: "Quicksand-Bold";
+	src: url("../fonts/Quicksand-Bold.otf") format("opentype");
+}
+/*applied cityFarmer.jpg */
+/* Change the link color on hover */
+/* applied hothouse.jpg */
+body {
+	background-color: $background-color_1;
+	font-family: $font-family_1;
+}
+#outerwrapper {
+	width: 70%;
+	margin: 0 auto;
+}
+.floatleft {
+	float: left;
+	margin-right: 3%;
+}
+h1 {
+	font-family: $font-family_2;
+	font-size: 60px;
+}
+h2 {
+	font-family: $font-family_3;
+	font-weight: normal;
+	font-style: italic;
+}
+main {
+	background-color: $background-color_2;
+	padding: 10px;
+	clear: both;
+	>ul {
+		list-style-image: url(../images/tomatoeBullet.png);
+	}
+}
+nav {
+	ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		width: 200px;
+		background-color: $background-color_2;
+		li {
+			a {
+				display: block;
+				color: $color_1;
+				padding: 8px 16px;
+				text-decoration: none;
+			}
+		}
+	}
+	>ul {
+		>li {
+			>a.active {
+				background-color: $background-color_3;
+				color: $color_1;
+			}
+			>a {
+				&:hover {
+					&:not(.active) {
+						background-color: $background-color_3;
+						color: $color_2;
+					}
+				}
+			}
+		}
+	}
+}
+.floatright {
+	float: right;
+	margin-left: 3%;
+}
+footer {
+	clear: both;
+	font-size: 0.75em;
+	text-align: center;
+	background-color: $background-color_3;
+	padding: 10px 0px;
+}
