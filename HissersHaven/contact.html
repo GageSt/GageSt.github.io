@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+      <title>SWDV-140|Project 2|Gage Tranter</title>
+      <link href="styles.css" rel="stylesheet" type="text/css">
+  </head>
+
+  <body class="wrapper">
+
+    <header>
+      <h1><img src = "images/cockroach.png"> Hissers' Haven</h1>
+      <h5>#1 in Cockroach Cultivating!</h5>
+    </header>
+
+    <nav class="body navbar">
+      <ul class="navbar-links">
+        <li>Menu</li>
+        <li><a href ="faq.html">About</a></li>
+        <li><a href ="">Shipping</a></li>
+        <li><a href ="index.html">Home</a></li>
+        <li><a href ="contact.html">Contact Us</a></li>
+      </ul>
+
+      <a id="nav-button" onclick="nav_button()"> 
+        <img src="/images/icons8-menu-50.png" alt=""> <!--Attached file represents icon alternative note-->
+      </a>
+     <div id="dropdown-wrapper">
+       <ul id="dropdown" class="dropdown">
+         <li><a href ="faq.html">About</a></li>
+         <li><a href ="">Shipping</a></li>
+         <li><a href ="index.html">Home</a></li>
+         <li><a href ="contact.html">Contact Us</a></li>
+       </ul>
+     </div>
+    </nav>
+      <main>
+        <h1>Have any questions? Leave us a message!</h1>
+          <form id="contact_form" name="contact_form" action="index.html" method="get">
+              <div>
+                  <label for="email_1">Email Address:</label>
+                  <input type="text" id="email_1" name="email_1">
+                  <span id="error1">*</span>
+              </div>
+
+              <div>
+                  <label for="email_2">Re-Enter Email Address:</label>
+                  <input type="text" id="email_2" name="email_2">
+                  <span id="error2">*</span>
+              </div>
+
+              <div>
+                  <label for="textbox">Comments:</label>
+                  <textarea type="textbox"name="text_box" id="text_box"></textarea>
+                  <span id="textBoxError">*</span>
+              </div>
+
+              <div>
+                  <label>&nbsp;</label>
+                  <input type="button" id="join_list" value="Send Message">
+              </div>
+          </form>
+
+        <h2>Signup for updates!</h2>
+          <form id="update_form" name="update_form" action="index.html" method="get">
+            <div>
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name">
+              <span id="nameError">*</span>
+            </div>
+
+            <div>
+              <label for="email_register">Email Address:</label>
+              <input type="text" id="email_register" name="email_register">
+              <span id="emailError">*</span>
+            </div>
+
+            <div>
+              <label for="phone">Phone Number:</label>
+              <input type="text" id="phone" name="phone">
+              
+            </div>
+
+            <div>
+              <label>&nbsp;</label>
+              <input type="button" id="get_updates" value="Get Updates">
+            </div>
+
+          </form>
+
+      </main>
+      <footer>
+        <h5>Follow us on our other Media</h5>
+        <a href ="https://github.com/GageSt"><img src="images/github.png"></a>
+      </footer>
+      <script src="project1.js"></script>
+      <script src="contact.js"></script>
+  </body>
+</html>

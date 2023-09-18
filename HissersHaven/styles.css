@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Lora&display=swap');
+
+
+body{
+  background-color:rgb(255, 255, 255);
+  background-image: url(images/wallpaper.jpg);
+}
+
+header{
+  background-image:linear-gradient(240deg, rgb(77, 151, 133), rgb(77, 151, 133), rgb(77, 151, 133), rgb(173, 211, 187), rgb(77, 151, 133));
+  width: 100%;
+  text-align: left;
+  text-indent: 70px;
+}
+
+main{
+  background-color:antiquewhite;
+  width: 80%;
+  position: relative;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+footer{
+  background-color:rgb(77, 151, 133);
+  width: 100%;
+}
+
+footer h5{
+  font-style:italic
+}
+
+nav{
+  background-color: rgb(173, 211, 187);
+  max-width: 100px;
+  text-align: left;
+}
+
+nav ul{
+  list-style-type: none;
+  text-indent: -50%;
+}
+
+nav ul a{
+  text-decoration:none;
+
+}
+
+table img{
+  width: 100px;
+  height: 100px;
+}
+
+h1, h2{
+  font-family: 'Julius Sans One', sans-serif;
+  text-decoration: underline;
+}
+
+main table{
+  align-items: center;
+}
+
+.wrapper{
+  display:flex;
+  text-align: center;
+  flex-flow: row wrap;
+}
+
+
+.wrapper > *{
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+#dropdown{
+  background-color: rgb(173, 211, 187);
+  top: .75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#nav-button{
+  display: none;
+}
+#dropdown-wrapper{
+    display: none;
+  }
+
+@media (max-width: 915px){
+  
+  nav{
+    width: 100%;
+    max-width: 100%;
+  }
+
+  nav ul{
+    display: inline-flex;
+    text-indent: 5px;
+  }
+
+  main{
+  width: 110%
+  }
+
+  #nav-button{
+    display: none;
+  }
+}
+
+@media (max-width: 425px ){
+
+  .navbar-links{
+    display: none;
+  }
+
+  #nav-button{
+    display: block;
+  }
+
+  #dropdown-wrapper{
+    display: block;
+  }
+}
+
+#faqs div{
+  display: none;
+}
+
+#faqs div.open{
+  display: block;
+}
+
+#faqs h2{
+  padding: .25em 0 .25em 25px;
+  background: url(images/open.png) no-repeat left center;
+}
+
+#faqs h2.minus {
+  background: url(images/minus.png) no-repeat left center;
+}
+
+form{
+ flex-direction: column;
+ margin-right: 10%;
+ text-indent: 0%;
+}
+
+
+

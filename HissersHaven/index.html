@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+      <meta charset="UTF-8">
+      <title>SWDV-140|Project 2|Gage Tranter</title>
+      <link href="styles.css" rel="stylesheet" type="text/css">
+  </head>
+
+  <body class="wrapper"></body>
+   
+    <header>
+      <h1><img src = "images/cockroach.png"> Hissers' Haven</h1>
+      <h5>#1 in Cockroach Cultivating!</h5>
+    </header>
+    
+    
+        <nav class="body navbar">
+          <ul class="navbar-links">
+            <li>Menu</li>
+            <li><a href ="faq.html">About</a></li>
+            <li><a href ="">Shipping</a></li>
+            <li><a href ="index.html">Home</a></li>
+            <li><a href ="contact.html">Contact Us</a></li>
+          </ul>
+<!-- Use onclick to trigger nav-button function in js-->
+             <a id="nav-button" onclick="nav_button()"> 
+               <img src="/images/icons8-menu-50.png" alt=""> <!--Attached file represents icon alternative note-->
+             </a>
+            <div id="dropdown-wrapper">
+              <ul id="dropdown" class="dropdown">
+                <li><a href ="faq.html">About</a></li>
+                <li><a href ="">Shipping</a></li>
+                <li><a href ="index.html">Home</a></li>
+                <li><a href ="contact.html">Contact Us</a></li>
+              </ul>
+            </div>
+        </nav>
+    
+    <main class="body">
+      <h1>Home</h1>
+      <p>Here at Hisser's Haven we breed and sell a variety of Hissing Cockroaches widely unknown to many hobbyists, providing country-wide shipping options to provide unique invertebrate options for any terrarium!</p>
+      <h2>Our Collection:</h2>
+      
+
+        <table>
+          <tr>
+            <th>Common</th>
+            <th>Halloween</th>
+            <th>Tiger</th>
+            <th>Widehorn</th>
+          </tr>
+          <tr>
+            <td><img src="images/CommonHisser.jpg"></td>
+            <td><img src="images/HalloweenHisser.png"></td>
+            <td><img src="images/TigerRoach.jpg"></td>
+            <td><img src="images/WideHisser.png"></td>
+          </tr>
+          <tr>
+            <td>Gromphadorhina portentosa</td>
+            <td>Elliptorhina javanica</td>
+            <td>Gromphadorhina grandidieri</td>
+            <td>Aelupoda insignis</td>
+          </tr>
+          <tr>
+            <td>($1.99 individual)</td>
+            <td>($7.99 individual)</td>
+            <td>($10.99 individual)</td>
+            <td>(15.99 individual)</td>
+          </tr>
+
+        </table>
+
+    </main>
+    
+    <footer>
+        <h5>Follow us on our other Media</h5>
+        <a href ="https://github.com/GageSt"><img src="images/github.png"></a>
+    </footer>
+
+    <script src="project1.js"></script>
+  </body>
+</html>
