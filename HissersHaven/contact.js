@@ -1,6 +1,7 @@
 "use strict"
 const $ = selector => document.querySelector(selector);
 
+
 document.addEventListener("DOMContentLoaded", () =>{
 
   $("#join_list").addEventListener("click", () =>{
@@ -43,6 +44,7 @@ document.addEventListener("DOMContentLoaded", () =>{
     const number = $("phone");
 
     let updateErrorMsg = "";
+    let submitContact = "Your info has been submitted!\nRedirecting to homepage..."
 
     if (name.value == ""){
       updateErrorMsg += "You must enter a name.\n";
@@ -54,8 +56,10 @@ document.addEventListener("DOMContentLoaded", () =>{
 
     if (updateErrorMsg == ""){
       $("#update_form").submit();
+      alert(submitContact);
     }else{
       alert(updateErrorMsg);
+      
     }
   })
 });
