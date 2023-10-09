@@ -44,10 +44,20 @@ nav ul a{
   text-decoration:none;
 
 }
-
+/*body img controls slide show size for now*/
 table img{
   width: 100px;
   height: 100px;
+}
+
+#image_list img, #main_image{
+  width: 200px;
+  height: 200px;
+}
+
+#image_list { 
+  display:none;
+  /*supposed to be a display none for #image_list*/
 }
 
 h1, h2{
@@ -124,21 +134,30 @@ main table{
   }
 }
 
-#faqs div{
+
+
+/*About Us CSS*/
+.expansion div{
   display: none;
 }
 
-#faqs div.open{
+.expansion div.open{
   display: block;
 }
 
-#faqs h2{
+.expansion h2{
   padding: .25em 0 .25em 25px;
   background: url(images/open.png) no-repeat left center;
+  background-position: 25%;
 }
 
-#faqs h2.minus {
+.expansion h2.minus {
   background: url(images/minus.png) no-repeat left center;
+  background-position: 25%;
+}
+
+.expansion .ul{
+  text-align:left;
 }
 
 form{
@@ -147,5 +166,25 @@ form{
  text-indent: 0%;
 }
 
+/*Contact CSS*/
+#contact_form label, #update_form label{
+  display: inline-block;
+  width: 11em;
+  text-align: right;
+  vertical-align: top;
+/*Code that aligns input label textareas */
+}
 
+/*Care Guide CSS*/
+#care_guide img{
+width: 100px;
+height:auto;
+}
 
+#care_guide h2{
+  background: url(images/open.png) no-repeat left
+}
+
+#care_guide h2.minus {
+	background: url(images/minus.png) no-repeat left center;
+}

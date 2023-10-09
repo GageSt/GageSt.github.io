@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+      <meta charset="UTF-8">
+      <title>SWDV-140|Project 2|Gage Tranter</title>
+      <link href="styles.css" rel="stylesheet" type="text/css">
+  </head>
+
+  <body class="wrapper"></body>
+   
+    <header>
+      <h1><img src = "images/cockroach.png"> Hissers' Haven</h1>
+      <h5>#1 in Cockroach Cultivating!</h5>
+    </header>
+    
+    
+        <nav class="body navbar">
+          <ul class="navbar-links">
+            <li><u>Menu</u></li>
+            <li><a href ="index.html">Home</a></li>
+            <li><a href ="faq.html">About</a></li>
+            <li><a href ="shipping.html">Shipping</a></li>
+            <li><a href ="careguide.html">Care Guides</a></li>
+            <li><a href ="contact.html">Contact Us</a></li>
+          </ul>
+<!-- Use onclick to trigger nav-button function in js-->
+             <a id="nav-button" onclick="nav_button()"> 
+               <img src="images/icons8-menu-50.png" alt=""> <!--Attached file represents icon alternative note-->
+             </a>
+            <div id="dropdown-wrapper">
+              <ul id="dropdown" class="dropdown">
+                <li><a href ="index.html">Home</a></li>
+            <li><a href ="faq.html">About</a></li>
+            <li><a href ="shipping.html">Shipping</a></li>
+            <li><a href ="careguide.html">Care Guides</a></li>
+            <li><a href ="contact.html">Contact Us</a></li>
+              </ul>
+            </div>
+        </nav>
+    
+    <main>
+     <p>Choose your location: </p>
+     <label for="shipping">Choose your location:</label>
+      <select id="shipping">
+        <option value="none">---</option>
+        <option value="usa">United States</option>
+        <option value="canada">Canada</option>
+        <option value="south">South America</option>
+        <option value="tooFar">Other...</option>
+      </select>
+
+      <h3 id="shippingQuote">*</h3>
+
+      <input type="button" id="submit_location" value="Check Shipping">
+    </main>
+    <footer>
+        <h5>Follow us on our other Media</h5>
+        <a href ="https://github.com/GageSt"><img src="images/github.png"></a>
+    </footer>
+    <script src="shipping.js"></script>
+    <script src="project1.js"></script>
+  </body>
+</html>
