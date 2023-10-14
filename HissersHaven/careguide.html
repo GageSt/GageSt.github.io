@@ -38,8 +38,22 @@
               </ul>
             </div>
         </nav>
-    
-    <main id="care_guide" class="body expansion">
+        
+
+    <main id="care_guide" class="body">
+      <div class="cycle-slideshow"
+        data-cycle-fx="fadeout"
+        data-cycle-timeout="2000"
+        data-cycle-speed="1000"
+        data-cycle-caption="#adv-custom-caption"
+        data-cycle-caption-template="Slide {{slideNum}}: {{cycleTitle}}">
+        
+        <img src="images/WideHorn_Roach.jpg" alt="" data-cycle-title="">
+        <img src="images/Roach_Conrad.jpg" alt="" data-cycle-title="">
+        <img src="images/HalloweenHisser.png" alt="" data-cycle-title="">
+        <img src="images/Dwarf_Roach.jpg" alt="" data-cycle-title="">
+      </div>
+      <div class="expansion">
       <h2><a href="#">Getting Started</a></h2>
         <div>
           <p>Hissing Roaches require a tank with no openings, tropical moisture, and a heat source</p>
@@ -53,6 +67,7 @@
           </ul>
           <img src="images/nuderoach.jpg" alt="">
         </div>
+      
 
       <h2><a href="#">Breeding</a></h2>
         <div>
@@ -63,7 +78,7 @@
           <h3>Courtship</h3>
           <p>One gendered pair of hissers can produce generational colonies in the hundreds as long as the care standards are met.</p>
         </div>
-
+      </div>
 
 
     </main>
@@ -72,7 +87,9 @@
         <h5>Follow us on our other Media</h5>
         <a href ="https://github.com/GageSt"><img src="images/github.png"></a>
     </footer>
-    
+    <!--Added jquery script and plugin-->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="js.js"></script>
     <script src="careGuide.js"></script>
     <script src="project1.js"></script>
   </body>

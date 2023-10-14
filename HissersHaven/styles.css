@@ -188,3 +188,24 @@ height:auto;
 #care_guide h2.minus {
 	background: url(images/minus.png) no-repeat left center;
 }
+
+.cycle-slideshow{
+  display: flex;
+  text-align: center;
+  margin-left: 25%;
+  margin-right: 25%;
+  align-items: center;
+}
+
+.roach_types{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+.roach_item{
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+}
