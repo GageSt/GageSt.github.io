@@ -1,1 +1,10 @@
+}
+#header-wrapper {
+    display: table;
+}
 
+
+.logo {
+    display: table-cell;
+    float: left;
+}
