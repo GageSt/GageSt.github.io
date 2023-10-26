@@ -1,23 +1,23 @@
 "use strict";
 $(document).ready( () => {
-    let nextSlide = $("#slides img:first-child");
-        
-    // start slide show
-    setInterval( () => {   
-        $("#caption").hide(3000);
-        $("#slide").slideUp(4000,
+     let imageCache = [];
+    $("#slides img").each( (index, img) => {    
+        const image = new Image();
+        image.src = $(img).attr("src");
+        image.title = $(img).attr("alt");
+        imageCache[index] = image;
+       });
+
+    let imageCounter = 0;
+    setInterval( () => {
+        $("#caption").fadeOut(1500);
+        $("#slide").fadeOut(1500,
             () => {
-                if (nextSlide.next().length == 0) {
-                    nextSlide = $("#slides img:first-child");
-                }
-                else {
-                    nextSlide = nextSlide.next();
-                }
-                const nextSlideSource = nextSlide.attr("src");
-                const nextCaption = nextSlide.attr("alt");
-                $("#slide").attr("src", nextSlideSource).slideDown(4000);                    
-                $("#caption").text(nextCaption).show(3000);
-            });    // end fadeOut()
-    },
+                imageCounter = (imageCounter + 1) % imageCache.length;
+                const nextImage = imageCache[imageCounter];
+                $("#slide").attr("src", nextImage.src).fadeIn(1500);
+                $("#caption").text(nextImage.title).fadeIn(1500);        
+            }); 
+    }, 
     3000);         // end setInterval()
 });
