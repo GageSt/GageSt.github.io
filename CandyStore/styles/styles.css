@@ -48,3 +48,11 @@ footer{
   padding:14px 16px;
   text-decoration: none;
 }
+.slideshow {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 400px;
+    height: 370px;
+    margin: 0 auto;
+    padding: 20px;
+    color: navy;
+}
