@@ -2,8 +2,27 @@
     display: table;
 }
 
+header{
+  padding: 60px;
+  text-align: right;
+  background: rgb(252, 151, 206);
+  color: white;
+  font-size: 30px;
+}
+
+main{
+  background: rgb(252, 183, 126)
+}
 
 .logo {
     display: table-cell;
     float: left;
+}
+
+footer{
+  padding: 60px;
+  text-align: right;
+  background: rgb(252, 151, 206);
+  color: white;
+  font-size: 30px;
 }
