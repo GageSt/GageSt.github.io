@@ -23,11 +23,16 @@ main{
 
 footer{
   padding: 60px;
-  text-align: right;
+  text-align: center;
   background: rgb(252, 151, 206);
   color: white;
   font-size: 30px;
 }
+
+footer ul{
+  list-style-type: none;
+}
+
 .main-nav ul{
   list-style-type: none;
   width: auto;
