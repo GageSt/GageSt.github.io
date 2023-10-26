@@ -26,3 +26,23 @@ footer{
   color: white;
   font-size: 30px;
 }
+.main-nav ul{
+  list-style-type: none;
+  width: auto;
+  overflow: hidden;
+  background-color: #ffb6c1;
+  display: flex;
+  padding:0px;
+  margin-top: 6%;
+}
+.main-nav li{
+  border-right:1px solid black;
+  width:100%;
+}
+.main-nav a{
+  display: block;
+  color: #659BDF;
+  text-align: center;
+  padding:14px 16px;
+  text-decoration: none;
+}
