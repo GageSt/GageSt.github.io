@@ -24,7 +24,7 @@ body{
 
 footer{
   padding: 60px;
-  left-margin: 50%;
+  margin: 0px auto;
   background: rgb(252, 151, 206);
   color: #888D94;
   font-size: 20px;
