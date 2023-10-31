@@ -21,6 +21,9 @@ body h1{
   text-align: center;
 }
 
+body h2{
+  text-align: center;
+
 .logo {
     display: table-cell;
     float: left;
