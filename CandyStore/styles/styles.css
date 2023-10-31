@@ -27,15 +27,18 @@ body h1{
 }
 
 footer{
-  padding: 60px;
-  margin: 0px 400px;
+  padding: 60px 0px 60px 700px;
   background: rgb(252, 151, 206);
-  color: #4c7ab4;
+  color: #406697;
   font-size: 20px;
 }
 
 footer ul{
   list-style-type: none;
+}
+
+footer li{
+  padding-bottom: 10px; 
 }
 
 .main-nav ul{
