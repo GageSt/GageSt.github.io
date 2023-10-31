@@ -24,10 +24,10 @@ body{
 
 footer{
   padding: 60px;
-  text-align: center;
+  left-margin: 50%;
   background: rgb(252, 151, 206);
-  color: white;
-  font-size: 30px;
+  color: #888D94;
+  font-size: 20px;
 }
 
 footer ul{
