@@ -16,7 +16,7 @@ $(document).ready( () => {
                 imageCounter = (imageCounter + 1) % imageCache.length;
                 const nextImage = imageCache[imageCounter];
                 $("#slide").attr("src", nextImage.src).fadeIn(1500);
-                $("#caption").text(nextImage.title).fadeIn(1500);        
+                $("#caption").text(nextCaption.title).fadeIn(1500);        
             }); 
     }, 
     3000);         // end setInterval()
