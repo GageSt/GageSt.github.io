@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title> Project 1 Bootstrap Webpage [ SWDV - 140 | Gage Tranter ]</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="scripts/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/css/styles.css">
+  </head>
+<!-- Document Header | Linked Bootstrap CSS as stylesheet -->
+
+<!-- [Header Banner and Text]--> 
+<header>
+  <div class ="p-5 bg-primary bg-gradient text-white text-left">
+    <div class="navbar-brand" href="">
+      <img src="images/aquatic-logo[4].png" alt="Aquatic Logo" width="100px">
+
+    
+     <h1>Salp-Spotting</h1>
+    </div>
+  </div>
+
+<!-- [Beginning of Navbar] -->
+<!-- *** navbar light does not effect text-color   V -->
+<!-- ^^^ Adding navbar-dark after bg-dark corrects color problems-->
+<nav class="navbar navbar-expand-md container-fluid bg-dark bg-gradient navbar-dark ">
+  <div class="container">
+
+      <a href="#" class="navbar-logo" alt="[Navbar Logo]"><img src="images/aquatic-logo[4].png" class="">Marinicology Association&reg</a>
+
+      <button 
+      class="navbar-toggler" 
+      type="button" 
+      data-bs-toggle="collapse" 
+      data-bs-target="#nav_menu"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+<!-- [Beginning of Navbar Collapsed] -->
+    <div class="collapse navbar-collapse container-fluid" id="nav_menu">
+<!-- [Navbar Items List] -->
+<!-- --- UL Class ms-auto positions nav-list items to the far right-->
+        <ul class="navbar-nav ms-auto d-flex">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link"><button class="btn  btn-outline-primary"> Home </button></a>
+          </li>
+
+          <li class="nav-item">
+            <a href="about.html" class="nav-link"><button class="btn btn-primary disabled"> About Us </button>  </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="info.html" class="nav-link"><button class="btn btn-outline-primary"> Info </button> </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="media.html" class="nav-link"><button class="btn btn-outline-primary"> Questions </button> </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="sponsor.html" class="nav-link"><button class="btn btn-outline-primary"> Our Sponsors </button> </a>
+          </li>
+
+        </ul>
+    </div> <!-- [Collapse End] -->
+  </div> <!-- [Container End] -->
+</nav>
+</header>
+    
+
+<!-- [Beginning of Body] -->
+  <body>
+
+  <!-- [Beginning of Banner] -->
+        <div class="about_banner"
+        style="background-image: url('/images/scubateam[1].jpg');">
+  <!-- [Banner Text Visual Effects]-->
+          <div class="color-overlay d-flex justify-content-center align-items-center">
+          <h1>Join Our Team!</h1>
+          </div>
+        </div>
+
+<!-- [Beginning of Main] -->
+        
+      <main class="container-fluid d-flex flex-column">                   <!-- [Main Container] -->
+       
+        
+
+        
+        <section class="d-flex flex-column flex-md-row"> <!-- [Bootstrap Screen Shift Classes for email and following paragraph] -->
+           <div class="bg-primary rounded-2 p-2">
+          <div class="d-flex flex-column">
+           
+          <h2>Become a Member Today!</h2>
+          <p>Contact us to hear about openings and opprotunities in the Salp Spotting community</p>
+          </div>
+
+  <!-- [Beginning of Email List] -->
+            
+          <form id="email_form" class="d-flex flex-column" name="email_form" 
+                action="index.html" method="get">
+              <div class="p-1">
+                  <label for="email_1">Email Address:</label>
+                  <input type="text" id="email_1" name="email_1">
+                  <span class="text-danger">*</span>
+              </div>
+              
+              <div class="p-1">
+                  <label for="email_2">Confirm Email Address:</label>
+                  <input type="text" id="email_2" name="email_2">
+                  <span class="text-danger">*</span>
+              </div>
+              
+              <div class="p-1">
+                  <label for="first_name">First Name:</label>
+                  <input type="text" id="first_name" name="first_name">
+                  <span class="text-danger">*</span>
+              </div>
+                          
+              <div class="p-1">
+                  <label for="last_name">Last Name:</label>
+                  <input type="text" id="last_name" name="last_name">
+                  <span class="text-danger">*</span>
+              </div>
+                          
+              <div class="p-1">
+                  <label for="state">State Code:</label>
+                  <input type="text" id="state" name="state">
+                  <span class="text-danger">*</span>
+              </div>
+                                      
+              <div class="p-1">
+                  <label for="zip_code">Zip Code:</label>
+                  <input type="text" id="zip_code" name="zip_code">
+                  <span class="text-danger">*</span>
+              </div>
+              
+              <div class="d-flex p-1">
+                  <label>Email me about:</label>
+                  <input class="m-1" type="checkbox" name="web" id="web" value="web">Staff Positions 
+                  <input class="m-1" type="checkbox" name="java" id="java" value="java">Diving Crew 
+                  <input class="m-2" type="checkbox" name="net" id="net" value="net">Ocean Navigation 
+                  <span>*</span>
+              </div>
+              <div>
+                  <label>&nbsp;</label>
+                  <input type="submit" id="join_list" name="join_list" value="Join List">
+                  <input type="reset" id="reset" name="reset" value="Reset">
+              </div>  
+          </form>
+        </div>
+<!-- *** Background color screen size change BS5 Does not work ***-->
+          <div class="d-flex flex-column bg-dark bg-md-primary text-white rounded-2 p-2">
+            <p><strong>Salp Spotting</strong> is a for-profit subsidiary company of Marinicology, a global network of scientists, marine biologists, and other wildlife advocates who strive to understand more about... we hope you guessed! Our team manages global, often antarctic, voyages to study Salps in their habitat.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+          </div>
+        
+        </section>
+
+
+      </main>
+
+<!-- [Bootstrap 5 JS script used in button] -->
+    <script src="scripts/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="scripts/about.js"></script>
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+
+
+        <!-- [Beginning of Footer] -->
+        <footer class="pg-5 bg-dark bg-gradient text-white text-center position-relative">
+          <!-- [Footer Outer Container] -->
+                <div class="container"> 
+                  <!-- [Media Links Container] -->
+                  <section class="mb-2 border-bottom">
+                      <a class="btn btn-outline btn-floating m-1" href="#" role="button"> 
+                        <i class="bi bi-facebook text-light">
+                        </i>
+                      </a>
+              
+                      <a class="btn btn-outline btn-floating m-1" href="#" role="button"> 
+                        <i class="bi bi-twitter text-light">
+                        </i>
+                      </a>
+              
+                      <a class="btn btn-outline btn-floating m-1" href="#" role="button"> 
+                        <i class="bi bi-google text-light">
+                        </i>
+                      </a>
+              
+                      <a class="btn btn-outline btn-floating m-1" href="#" role="button"> 
+                        <i class="bi bi-instagram text-light">
+                        </i>
+                      </a>
+              
+                      <a class="btn btn-outline btn-floating m-1" href="#" role="button"> 
+                        <i class="bi bi-github text-light">
+                        </i>
+                      </a>
+                  </section>
+      
+                  <section class="d-flex justify-content-center">
+                    <a href="#" class=""><img style="width:25px;" class="border border-white rounded-circle" src="/images/aquatic-logo[4].png"> Marinicology Association&reg</a>
+                  </section>
+                    
+                </div>
+      
+                <!-- [Copyright Footer Container] -->
+                <div class="text-center p-4">
+                  © 2023 Copyright:
+                  <a class="text-reset fw-bold" href="#">SWDV-143</a>
+                </div>
+                
+            
+            <!-- [Return To Top Button] -->
+                  <a href="#" class="position-absolute bottom-0 end-0 p-0">
+                    <i class="bi bi-arrow-up-circle text-bg-dark"></i>
+                  </a>
+                </div>
+              </footer>
+        
+    </body>
+ </html>
