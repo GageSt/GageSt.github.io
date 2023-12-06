@@ -37,7 +37,7 @@ margin-right: 5px;
 /* -[Parallax Effect]- __________________________________________*/
 .parallax_wrapper{
   /*Push Background Below Head & Nav | Stretch Background to Screen length*/
-  background-image: url("/images/salpbackground.jpg");
+  background-image: url("/SalpSpotting/images/salpbackground.jpg");
   background-color: antiquewhite;
   background-size: cover;
  /* -Basic Parallax Effect-*/ 
