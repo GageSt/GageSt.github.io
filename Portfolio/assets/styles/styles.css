@@ -42,7 +42,8 @@ main{
 }
 
 .nav-banner{
-  background: url("/assets/images/ColdBackground.jpg");
+  /* Ensure that CSS URLs match deployment URL (Will break styles for dev)*/
+  background: url("/Portfolio/assets/images/ColdBackground.jpg");
 
   /* Make blur */
   filter: blur(8px);
