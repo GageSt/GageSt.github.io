@@ -74,7 +74,7 @@ margin-right: 5px;
 .parallax_wrapper{
 
   /*Push Background Below Head & Nav | Stretch Background to Screen length*/
-  background-image: url('./assets/images/WarehouseBackground[5].jpg');
+  background-image: url('/OfficeDrone/assets/images/WarehouseBackground[5].jpg');
   background-color: antiquewhite;
   background-size: cover;
  /* -Basic Parallax Effect-*/ 
