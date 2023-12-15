@@ -1,0 +1,68 @@
+/*.parallax-header{
+  background: #000;
+  background: linear-gradient(
+    red, orange
+  ),
+url(images/test_salp[1].jpg);
+background-attachment:fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}*/
+
+
+main{
+  margin: 0;
+  
+}
+
+
+
+.wrapper{
+  /* !-- 100vh sets wrapper as scrollable body --*/
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  perspective: 10px;
+}
+
+.parallax-background{
+  
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  overflow-y: hidden;
+  overflow-x:hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  transform-style: preserve-3d;
+  z-index: -1;
+}
+
+.foreground{
+ 
+
+ margin-top: 182px;
+ background-repeat: repeat;
+ max-height: 20%;
+ transform: translateZ(-5px) scale(1.5);
+}
+
+.background{
+  height: 100%;
+  
+  background-repeat: repeat-x;
+  transform: translateZ(-10px) scale(2);
+}
+
+.background,
+.foreground{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index:-1;
+}
