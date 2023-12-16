@@ -1,0 +1,231 @@
+<!--[Devlog]
+
+-Created Five Page Template with Consistent Navbar and Footer
+- Added BS5 JS & CSS
+-Created Parallax Effect (Failed Attempt Marked)
+- Structured Page for mobile-first view
+- Added cdn link to Json for icon images
+- Themed page & content
+-Implemented JS for Email Verification
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title> [ SWDV - 140 | Gage Tranter | Final Question 1]</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width-device-width">
+    <link rel="stylesheet" href="scripts/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/css/styles.css">
+  </head>
+<!-- Document Header | Linked Bootstrap CSS as stylesheet -->
+
+<!-- [Header Banner and Text]--> 
+    <header>
+        <div class ="p-5 bg-primary bg-gradient text-white text-left">
+          <div class="navbar-brand" href="">
+            <img src="images/aquatic-logo[4].png" alt="Aquatic Logo" width="100px">
+
+          
+           <h1 id="header_logo">Salp-Spotting</h1>
+          </div>
+        </div>
+
+<!-- [Beginning of Navbar] -->
+<!-- *** navbar light does not effect text-color   V -->
+<!-- ^^^ Adding navbar-dark after bg-dark corrects color problems-->
+      <nav class="navbar navbar-expand-md container-fluid bg-dark bg-gradient navbar-dark ">
+        <div class="container">
+
+            <a href="#" class="navbar-logo" alt="[Navbar Logo]"><img src="images/aquatic-logo[4].png" class="">Salp Spotting</a>
+
+            <button 
+            class="navbar-toggler" 
+            type="button" 
+            data-bs-toggle="collapse" 
+            data-bs-target="#nav_menu"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+  <!-- [Beginning of Navbar Collapsed] -->
+          <div class="collapse navbar-collapse container-fluid" id="nav_menu">
+  <!-- [Navbar Items List] -->
+  <!-- --- UL Class ms-auto positions nav-list items to the far right-->
+              <ul class="navbar-nav ms-auto d-flex">
+                <li class="nav-item">
+                  <a href="#parallax_wrapper" class="nav-link"><button class="btn btn-primary disabled"> Home </button></a>
+                </li>
+
+                <li class="nav-item">
+                  <a href="#salpCard" class="nav-link"><button class="btn btn-outline-primary"> Intro </button>  </a>
+                </li>
+
+                <li class="nav-item">
+                  <a href="#salpAccordion" class="nav-link"><button class="btn btn-outline-primary"> Info </button> </a>
+                </li>
+
+              </ul>
+          </div> <!-- [Collapse End] -->
+        </div> <!-- [Container End] -->
+      </nav>
+    </header>
+
+
+<!-- [Beginning of Body] -->
+ <body class="">
+    <div class="parallax_wrapper container-fluid d-flex mx-auto">
+    </div>
+    
+<!-- [Beginning of Main] --> 
+          <main>
+<!-- [Main Header Text, Paragraph, and Thumbnail]-->
+            <div class="container-fluid my-5 d-md-inline-flex d-sm-flex-row"> <!-- [Outer Row 1] -->
+                <h1 class="justify-content-start p-1">Diving Down Into the World of Salps</h1>
+             
+                <div class="d-flex flex-column p-2">
+                  <p class="justify-content-center row align-items-center p-2"> <h4>Salps,</h4>frequently referred to as "Sea Squirts" are ocean-dwelling relatives of plankton that reach impressive sizes. These unique creatures live throughout the ocean; some near the equator responding to algae blooms, but mostly in the Southern Ocean living in large Atlantic colonies.</p>
+                 
+               
+                  <div class="d-flex">
+                    <div class="col-sm-6">
+                        <div class="card bg-dark text-bg-dark">
+                            <div class="row card-body">
+                              <img src="images/Example_Salp[1].jpg" class="card-img-top" style="max-width: 50%; object-fit:cover;">
+                              <p class="card-text shadow-lg" style="max-width: 50%;"><strong>Salp Facts!</strong><br>Salp colonies are still being studied for their overall impact on oceanic carbon recycling!</p>
+                            </div>
+                        </div>
+                      </div>
+                  </div>
+
+                </div>
+            </div>  
+
+
+
+<!-- [Main Second Paragraph Text]-->
+            <div class="salpCard row align-items-end p-3">
+                <h3>Do they sting?</h3>
+                <p>Not at all! Salps are harmless creatures that travel in large numbers of clones.</p>
+                <p>Salps aren't easy to spot, nearly invisible and soft-bodied, out of water they quickly lose their shape, turning into a sort of "salp jelly"</p>
+            </div>
+
+<!--[Beginning of Accordion]-->
+            <div class="salpAccordion accordion p-2" style="max-width: 50%" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button bg-dark text-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Planktonic Tunicates
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <strong>Large Plankton/Marine Invertebrates </strong><p>Salps are a large plankton that possess a vertebrae. These creatures mainly feed off small species of Phytoplankton by filtering it through their stomachs as they travel.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button collapsed bg-dark text-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Salp Chains
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <strong>Barrel Shaped Bodies</strong><p>Salps clone themselves horizontally in chains, propelling themselves by pushing water through their barrel shaped bodies like a jet engine. While the chain travels horizontally, the outermost Salp is still considered the "Leader Salp".</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button class="accordion-button collapsed bg-dark text-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Salp Oceans
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <strong>Scientists have been making polar expeditions in recent years to study these creatures as they continue to show up on antarctic expeditions. </p> 
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+
+          </main>
+
+<!-- [Bootstrap 5 JS script used in button] -->
+        <script src="scripts/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+
+
+<!-- [Beginning of Footer] -->
+        <footer class="pg-5 bg-dark bg-gradient text-white text-center position-relative">
+    <!-- [Footer Outer Container] -->
+          <div class="container"> 
+            <!-- [Media Links Container] -->
+            
+              <p class="pt-4">2023 | Gage Tranter</p>
+              <div class="footerLinks">
+                <a class="btn btn-outline btn-floating m-1" href="#" role="button">
+                  <i class="bi bi-envelope-at-fill text-light"></i>
+                </a>
+          
+                <a class="btn btn-outline btn-floating m-1" href="#" role="button">
+                  <i class="bi bi-google text-light"></i>
+                </a>
+          
+                <a class="btn btn-outline btn-floating m-1" href="#" role="button">
+                  <i class="bi bi-github text-light"></i>
+                </a>
+              </div>
+              <a href="https://catalog.cwi.edu/course-descriptions/swdv/"><h5>SWDV-143</h5></a>
+      
+      <!-- [Return To Top Button] -->
+          <div>
+            <a href="#" class="position-absolute bottom-0 end-0 p-0">
+              <i class="bi bi-arrow-up-circle text-bg-dark"></i>
+            </a>
+          </div>
+        </footer>
+ 
+      </body>
+</html>
+
+
+
+
+
+<!-- ***[Failed] [Parallax Background] 
+          
+            <div class="wrapper">
+              <div class="parallax-background">
+
+                <img src="images/salpbackground[2].jpg" class="background">
+                <img src="images/wave[1].svg" class="foreground">
+                
+              </div>
+            </div>
+-->
+
+<!-- <footer class="bg-body-tertiary text-center ">
+    <div class="container-fluid p-4 ">
+      <section class="mb-4 ">
+        
+        <a class="btn btn-outline btn-floating m-1" href="images/icons8-facebook-25.png" role="button"> 
+          <i class="fab fa-facebook-f"> == $0
+            ::before
+          </i>
+        </a>
+
+        <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1" href="/images/twitter.png" role="button"></a>
+        
+
+
+      </section>
+    </div>
+  </footer>-->  
+  
+  
+  <!--<img src="images/Example_Salp[1].jpg" class="card-img-top" style="max-width: 50%;">
+                  <div class="card-body">
+                  <p class="card-text">Text</p>
+                  </div>-->
